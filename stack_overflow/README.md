@@ -22,4 +22,5 @@
 通过命令行选项 `-fno-stack-protector` 可以阻止 GCC 产生 cannary 保护代码，否则将默认生成
 
 ④NX
+
 GCC 默认启用 NX 选项，通过添加 `-z execstack` 关闭 NX。
