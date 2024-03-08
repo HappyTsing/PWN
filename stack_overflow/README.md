@@ -24,3 +24,9 @@
 ④NX
 
 GCC 默认启用 NX 选项，通过添加 `-z execstack` 关闭 NX。
+
+# 核心原理
+
+栈是从高地址向低地址增长的，但是，当编译器为一个变量在栈中分配好空间后，该变量却是从低地址向高地址增长。
+
+<img src="https://happytsing-figure-bed.oss-cn-hangzhou.aliyuncs.com/pwn/common-stack-frame.png" alt="common-stack-frame" style="zoom:33%;" />
